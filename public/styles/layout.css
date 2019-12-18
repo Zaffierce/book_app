@@ -73,7 +73,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 1.5em;
   text-align: center;
   letter-spacing: 0.1em;
@@ -115,7 +115,7 @@ div {
   text-align: center;
 }
 
-form {
+#create-form{
   background: rgba(250, 238, 230, 0.733);
   border: black solid 1px;
   padding-top: 0;
@@ -125,6 +125,9 @@ form {
   margin: 1em;
 }
 
+#book-buttons {
+  text-align: center;
+} 
 /* when it gets bigger thn 480px-760, do this. */
 /* set intial max-width */
 /* make small one first, then do media query for larger */

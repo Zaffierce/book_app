@@ -8,16 +8,16 @@
     <div class="bookInfo">
       <ul class="deck">
         <section class="card">
-          <li class="title"> <%= myBooks[i].title %> </li>
-          <li class="author"> <%= myBooks[i].author %> </li>
-          <li class="description"> <%= myBooks[i].description %> </li>
-          <!-- <li class="isbn"> ISBN: <%= myBooks[i].isbn %> </li> -->
+          <img src= <%= specificBook.image_url %> />
+          <li class="title"> <%= specificBook.title %> </li>
+          <li class="author"> <%= specificBook.author %> </li>
+          <li class="description"> <%= fullDescription.description %> </li>
          </section>
       </ul>
     </div>
 
 
-    <form id="create-form" action="/add" method="POST">
+    <form id="create-form" action="/add/<%= specificBook.isbn %>" method="POST">
       <fieldset>
         <legend>Details for this book</legend>
         <input type="hidden" name="title" value="<%= specificBook.title %>">
